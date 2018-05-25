@@ -17,6 +17,7 @@
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
 	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Caudex|Dancing+Script|Permanent+Marker|Quattrocento" rel="stylesheet">
 
 	<style>
 		.jumbotron {
@@ -37,13 +38,36 @@
 		}
 
 		.container {
-			background-image: url("assets/images/tucson.jpg");
+			background-image: url("src/assets/images/tucson.jpg");
 			/* Create the parallax scrolling effect */
 			background-attachment: fixed;
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
 			height: 1250px;
+		}
+
+		.display-4 {
+			/* font-family: 'Permanent Marker', cursive; */
+			font-family: 'Dancing Script', cursive;
+			font-size: 60px;
+			color: rgb(247, 162, 6);
+			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+		}
+
+		#myName {
+			/* font-family: 'Abril Fatface', cursive; */
+			/* font-family: 'Caudex', serif; */
+			font-family: 'Quattrocento', serif;
+		}
+
+		#about {
+			font-family: 'Quattrocento', serif;
+			font-size: 40px;
+			font-weight: bold;
+			/* background-color: bisque; */
+			/* color: black; */
+			/* border-radius: 25px; */
 		}
 	</style>
 </head>
@@ -54,7 +78,7 @@
 
 		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 
-			<h2>
+			<h2 id="myName">
 				<i class="fas fa-fire"></i> Ryan Krug</h2>
 
 
@@ -67,7 +91,7 @@
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
 
-						<a class="nav-link" href="#">Home</a>
+						<a class="nav-link" href="#" id="myName">Home</a>
 					</li>
 					<!-- <li class="nav-item">
 
@@ -76,7 +100,7 @@
 
 					<li class="nav-item">
 
-						<a class="nav-link" href="portfolio.html">Portfolio</a>
+						<a class="nav-link" href="portfolio.html" id="myName">Portfolio</a>
 					</li>
 
 
@@ -88,7 +112,7 @@
 
 		<div class="jumbotron">
 
-			<h1 class="display-4" style="text-align:center">Welcome</h1>
+			<h1 class="display-4" style="text-align:center">Dreaming of monsoons...</h1>
 			<p class='lead"'></p>
 
 		</div>
@@ -98,7 +122,7 @@
 				<div class="card mb-4">
 					<div class="card-body text-center">
 						<h5 class="card-title">Full Stack Web Development</h5>
-						<p class="card-text">Experience with HTML5, CSS3, JavaScript, Bootstrap 4, Firebase, Node, Express, mySQL, Sequelize, MongoDB, Mongoose</p>
+						<p class="card-text">Experience with HTML5, CSS3, JavaScript, jQuery, Bootstrap 4, Firebase, Node, Express, mySQL, Sequelize, Handlebars, MongoDB, and Mongoose</p>
 						<!-- <a href="#" class="card-link">more info</a> -->
 					</div>
 
@@ -120,7 +144,7 @@
 				<div class="card">
 					<div class="card-body text-center">
 						<h5 class="card-title">Tutor</h5>
-						<p class="card-text">My background is in physics. Although I usually teach high school Algebra and Geometry, I like to help students with all matters of math
+						<p class="card-text">My background is in physics. Although I usually teach high school Algebra and Geometry, I like to help students with all kinds of math
 							and science. </p>
 						<!-- <a href="#" class="card-link">more info</a> -->
 					</div>
@@ -134,7 +158,7 @@
 
 		<div class="row mt-sm-4 mt-md-0">
 
-			<div class="col-sm-12 col-md-8">
+			<div class="col-sm-12 col-md-8" id="about">
 				<h3>This is a temporary home.</h3>
 				<p class="lead"> For the time being, this is my own little portion of the web. This site is designed to allow you to both see some of the projects I have
 					worked on, and to also contact me should you feel the need. Feel free to look around and share what you find. I am learning full stack web
@@ -143,7 +167,7 @@
 				</p>
 			</div>
 			<div class="col-sm-12 col-md-4">
-				<h3 class="mb-4">Find me on the web.</h3>
+				<h3 class="mb-4" style="font-weight:heavy">Find me on the web.</h3>
 				<ul class="nav flex-column nav-pills">
 
 					<li class="nav-item">
