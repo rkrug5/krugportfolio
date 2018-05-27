@@ -7,6 +7,7 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" type="image/png" sizes="32x32" href="src/assets/images/favicon.ico">
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
@@ -34,6 +35,7 @@
 		}
 
 		.nav-link {
+			width: 100%;
 			font-size: 24px;
 		}
 
@@ -80,6 +82,16 @@
 		h5 p {
 			color: #e0e0e0;
 
+		}
+
+		.footer {
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			background-color: red;
+			color: white;
+			text-align: center;
 		}
 	</style>
 </head>
@@ -174,7 +186,7 @@
 
 		<div class="row mt-sm-4 mt-md-0">
 
-			<div class="col-sm-12 col-md-7" id="about">
+			<div class="col-sm-12 col-md-8 text-sm-center text-md-left" id="about">
 				<h3>This is a temporary home.</h3>
 				<p class="lead"> For the time being, this is my own little portion of the web. This site is designed to allow you to both see some of the projects I have
 					worked on, and provide contact info in case you like what you see. Feel free to look around and share what you find. I am learning full
@@ -182,7 +194,7 @@
 				<p>
 				</p>
 			</div>
-			<div class="col-sm-12 col-md-3">
+			<div class="col" id="myName">
 				<h3 class="mb-4" style="font-weight:heavy" style="color:#e0e0e0; font-size: 60px;">Find me on the web.</h3>
 				<ul class="nav flex-column nav-pills">
 
@@ -200,11 +212,14 @@
 
 		</div>
 
+
+
+
 	</div>
 
-
-
-
+	<div class="footer">
+		&copy; Copyright 2018 Ryan Krug
+	</div>
 
 
 
